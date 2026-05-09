@@ -15,5 +15,4 @@ route # show the ip routing table
 hostname # show/set systems host name
 ```
 `nmap` is a network exploration tool
-
-used to scan networks
+- used to scan networks
