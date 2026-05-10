@@ -5,6 +5,14 @@ Space is a delimiter in linux terminal
 - Correct way `variable="value"`
 
 - Wrong way  `variable = "value"`
+### Operators
+`&` allows you to run commands in the background of your terminal
+
+`&&` allows you to combine multiple commands in one line of your terminal
+
+`>` redirects output elsewhere, eg into a file
+
+`>>` redirects output but appends instead of replacing content in the target file
 
 Environment variables are available to all programs that run in your shell
 `env` command to view all environment variables
