@@ -103,7 +103,14 @@ cp # copy a file to a different directory
 grep # use it to search for a string in a file
 
 find # used to search for a file
+
 ```
+
+For filenames starting with a dash `-` , use `./` before the filename
+
+`find / -user [user] -group [group] -size [size]` - command to track down a file by its user or group and its size
+
+`2>/dev/null` hides all the permission denied errors
 ## Other commands
 `history` command shows all commands you typed into the terminal
 
@@ -120,3 +127,5 @@ Package managers are s/w that help you install other s/w
 sudo apt update # updates the apt package
 ```
 `webi` lets you download command line tools directly from the internet
+
+`uniq` used to compare adjacent lines
