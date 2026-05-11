@@ -5,9 +5,13 @@
 - `eth0` for ethernet
 - `wlan0` for wireless
 `ip -4 addr` shows your ipv4 address
-`ping` checks response from a domain
+
+`ping` uses `ICMP` (Internet Control Message Protocol) packets to determine the performance of a connection between devices
+
 `netstat` shows detail about network connectivity
+
 `netstat -a` shows listenning ports
+
 `curl` used to transfer data to or from a website - can be used to get the source code of a website to your terminal
 
 ```bash
