@@ -81,9 +81,26 @@ Get password from a file where all uppercase and lowercase letters have been rot
 
 `tr` translates characters - works only with standard input,not files
 
-`cat` the file then pipeline it into `tr 'your-alphabet' 'translation-logic'
+`cat` the file then pipeline it into `tr 'your-alphabet' 'translation-logic'`
 
 # Level 13
+Get the password from a repeatedly compressed file
+
+used `xxd -r` to revert file data back to binary
+
+used `xxd data.txt | head -n 1` to get the file type
+* 1f8b - is a gzip file
+used `file` command to find the file type
+
+repeatedly decompressed the files based on their file types
+
+- `gunzip` for gzip files (`.gz`)
+- `bunzip2` for bzip2 files (`.bz2`)
+- `tar` for tar files
+
+# Level 14
+Get the private ssh key that can be used to log into the next level
+
 
 
 
