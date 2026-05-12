@@ -66,7 +66,7 @@ Format is `#! interpreter [optional-args]`
 
 `ps` command shows process status
 `ps aux` shows all processes and their status
-## File systems
+## File operations
 ```bash
 pwd # (print working directory) shows the current directory
 
