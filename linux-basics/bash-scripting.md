@@ -55,6 +55,21 @@ do
     block of code
 done
 ```
+## Case Statements
+use `;;` to show end of a case statement line
+```bash
+#Syntax
+
+#Call to action statement(s)
+read variable_name; #take user input and store it in variable_name
+case $variable_name in 
+     1) case statement ;; #case statements
+    .
+    .
+    .
+    *) #kinda like a catch-all,executes when user didnt select option from provided range
+esac # exit the case statement block
+```
 # Functions
 Useful for repetitive blocks of code
 ```bash
@@ -67,7 +82,6 @@ function_name () {
 #Function call
 #code
 function_name
-
 ```
 
 
