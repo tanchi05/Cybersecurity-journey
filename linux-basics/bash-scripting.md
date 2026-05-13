@@ -1,6 +1,8 @@
 # Bash scripting
 Writing many commands in one executable file to execute them at once - useful for automation
 
+Use `#` for comments
+
 First line should tell the computer what program it should use to execute the file (`shebang`)
 - Often looks like `#!/bin/bash` ,which uses the bash interpreter
 
@@ -20,9 +22,9 @@ Executes a command as per the given conditions / Execute different statements ba
 ```bash
 if [ condition ]
 then
-    [process]
+    process
 else
-   [ alternative process]
+    alternative process
 fi # come out of the if block
 ```
 ### Exit codes
@@ -39,9 +41,19 @@ Executes a block repeatedly until the base case is satisfied
 #Syntax
 while [ base case ]
 do
-    [ block of code ]
+     block of code 
 done
 ```
+## For loop
+Allows the system to do a task repeatedly for items in a set
+```bash
+#Syntax
+for variable_name in {range} # range e.g - {1..10}
+do
+    block of code
+done
+```
+
 
 
 
