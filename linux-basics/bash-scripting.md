@@ -6,7 +6,9 @@ Use `#` for comments
 First line should tell the computer what program it should use to execute the file (`shebang`)
 - Often looks like `#!/bin/bash` ,which uses the bash interpreter
 
-Use `echo` to print out to the terminal
+Use `echo` to print out to the terminal (Standard output)
+
+Use `read` to take input from the user
 
 Variable assignment = `variable = variable_name`
 
@@ -53,8 +55,20 @@ do
     block of code
 done
 ```
+# Functions
+Useful for repetitive blocks of code
+```bash
+#Syntax
+#Function declaration
+function_name () {
+    block of code
+}
 
+#Function call
+#code
+function_name
 
+```
 
 
 
