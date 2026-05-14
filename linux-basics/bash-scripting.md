@@ -92,7 +92,7 @@ eg.
 
 `atq` command shows jobs scheduled to run in the future
 
-Use `atrm -job_number-` to delete scheduled job
+Use `atrm job_number` to delete scheduled job
 
 
 
