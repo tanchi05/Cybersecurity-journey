@@ -86,6 +86,10 @@ function_name
 # Scheduling jobs
 Use `at` command to make a script or command run at a specific time
 
+eg.
+
+`at 14:30 -f ./script.sh` #This script will run at 14:30
+
 
 
 
