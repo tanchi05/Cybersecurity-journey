@@ -90,6 +90,10 @@ eg.
 
 `at 14:30 -f ./script.sh` #This script will run at 14:30
 
+`atq` command shows jobs scheduled to run in the future
+
+Use `atrm -job_number-` to delete scheduled job
+
 
 
 
