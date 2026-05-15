@@ -135,7 +135,36 @@ Appended a cat command to the ssh command
 # Level 19
 Use the binary file to run a command as a different user
 
-# Level 20
+# Level 20 
+Took me sometime to figure out what i was supposed to do
+
+Created 2 terminals each connected to bandit
+
+used `nc` to set up a listener on a port and sent the password - ` echo password | nc -l -p port`
+
+ran suconnect on the other terminal with the port i created
+
+# Level 21
+Checking what cron job is being executed
+
+Cd into `/etc/cron.d/` and list items
+
+cat cronjob_bandit22 and found the location of the script scheduled to run
+
+cat the script to get the location of the file in the tmp dir where the password is stored
+
+# Level 22
+Checking the cronjob script
+
+read line by line to understand the logic
+
+uses md5sum encryption to create filename for next level password
+
+modify the echo line to bandit23 to see the filename in the /tmp dir
+
+cat the file
+
+# Level 23
 
 
 
