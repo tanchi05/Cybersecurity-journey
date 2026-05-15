@@ -133,6 +133,10 @@ Should read a file immediately after logging in
 Appended a cat command to the ssh command
 
 # Level 19
+Use the binary file to run a command as a different user
+
+# Level 20
+
 
 
 
