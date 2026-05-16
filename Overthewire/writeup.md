@@ -165,6 +165,27 @@ modify the echo line to bandit23 to see the filename in the /tmp dir
 cat the file
 
 # Level 23
+We're supposed to create a script which will be executed by the system as scheduled
+
+Script to be executed should be in the /var /spool.... as per the the crontab
+
+first created a script to read bandit24 pass in the /tmp/myfolder
+
+gave everyone execute permissions to the script
+
+created a blank password file in the /tmp/myfolder and gave everyone write permissions to it (use `chmod` to change permissions)
+
+modified the script so the read bandit24 password is sent to my password file in the /tmp/myfolder
+
+transferred the script to the /var/spool... dir that is scheduled by cron to be executed
+
+script executed and password sent to my password file
+
+# Level 24
+
+
+
+
 
 
 
