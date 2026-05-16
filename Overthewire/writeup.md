@@ -135,6 +135,8 @@ Appended a cat command to the ssh command
 # Level 19
 Use the binary file to run a command as a different user
 
+use `./` just in case the pasth is not set
+
 # Level 20 
 Took me sometime to figure out what i was supposed to do
 
@@ -182,6 +184,96 @@ transferred the script to the /var/spool... dir that is scheduled by cron to be 
 script executed and password sent to my password file
 
 # Level 24
+Supposed to connect to the daemon on port 30002 then send password with a pin
+
+first connected to it using `nc` to see how it looks
+
+it expects a bandit24 password and a 4 digit pin
+
+too many options,so i write a script that uses a for loop to write the bandit24 password and a 4 digit pin separated by a space
+
+4 digit pins from 1000 - 9999.....too many trials
+
+run the script and pipe it into the `nc` command so nc brute forces all possible combinations of password and 4 digit pin until match is found
+
+process stopped immediately password was found..but could have used `grep -v` to only display the line without the error message
+
+# Level 25
+log in and copy the bandit26 private key
+
+# Level 26
+Connection closes immediately after connecting
+
+log in as bandit25 and check out how bandit logs in ,in the /etc/pass 
+
+Minimise terminal to break out of the shoetext script with the more command
+
+use the vim to type external commands
+
+set shell to the normal `/bin/bash`
+
+launch the shell from vim and use the `bandit27-do` binary to extract bandit27 password from bandit26 connection
+
+use `./` since bandit27-do is not a command
+
+# Level 27
+have git on my local machine
+
+access the git repo at bandit27
+
+clone the repo to my local machine (use port 2220 while cloning )
+
+# Level 28
+clone the bandit 28 repo just as in previous step
+
+password looks weird
+
+use `git-log` to check the commit history - password was changed
+
+used `git checkout` with the commit hash to go back to the initial state of the readme file
+
+# Level 29
+clone repo as in previous level
+
+no password in the readme
+
+pull the log and jump to the initial commit but still no pass
+
+checkout back to master and check for any branches
+
+jump to the dev branch and get the pass
+
+# Level 30
+clone the repo
+
+the readme has nothing
+
+check the logs for commit timeline but none
+
+check all branches but still no branches
+
+check tags.Use `git show` to see the tag
+
+# Level 31
+clone the repo
+
+task is to create and push a file
+
+used `-f` from the hint when adding so the .txt file is not ignored 
+
+commit then push
+
+# Level 32
+gets logged into an uppercase shell
+
+trick is escaping from the uppercase shell into a normal shell
+
+use a command that works in uppercase and doesnt change meaning - `$SHELL`
+
+
+
+
+
 
 
 
