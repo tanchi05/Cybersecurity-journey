@@ -10,6 +10,8 @@ Computer Science student, currently building practical defensive security skills
 - **Overthewire/** — Bandit wargame writeups (levels 0–32)
 - **Networking/** — Notes on networking concepts and tools
 - **linux-basics/** — Linux fundamentals and bash scripting
+- **Packet-filter/** - a simple firewall simulation
+- **Python Keylogger/** - a simple keylogger built using python
 <!-- - **tools/** — Security tools I've built from scratch -->
 
 ## Current focus
